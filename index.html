@@ -1,292 +1,72 @@
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Open Props Image Gallery</title>
-    <meta
-      name="description"
-      content="Image gallery with View Transitions API & Scroll-Driven Animation"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-<body>
-    <header><h1>QR Slides Showcase</h1></header>
-    <main>
-      <section>
-        <div class="imageGallery">
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/D9H5dMq/1.jpg"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/BCsrygF/Image-1.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/2KJrChH/Image-2.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/zNt6tCX/4.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/8PQfh7N/5.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/vmLshZW/6.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/zNKWXGs/7.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/brT0QXk/8.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://i.ibb.co/F4tDtyf/9.jpg"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <!-- <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-10.webp"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-11.webp"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button>
-          <button>
-            <picture>
-              <img
-                width="309"
-                height="309"
-                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-12.webp"
-                alt="A cute cat"
-                loading="lazy"
-              />
-            </picture>
-          </button> -->
-        </div>
-
-<!-- --------------------------------------------------------- -->
-
-        <dialog class="dialog" id="dialog">
-          <div class="dialogContainer">
-            <div class="carousel" id="carousel">
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/D9H5dMq/1.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/BCsrygF/Image-1.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/2KJrChH/Image-2.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/zNt6tCX/4.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/8PQfh7N/5.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/vmLshZW/6.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/zNKWXGs/7.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/brT0QXk/8.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://i.ibb.co/F4tDtyf/9.jpg"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <!-- <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-10.webp"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-11.webp"
-                  alt="A cute cat"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <img
-                  width="309"
-                  height="309"
-                  src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-12.webp"
-                  alt="A cute cat"
-                  loading="lazy"
-                /> -->
-              </picture>
-            </div>
-            <div class="controls">
-              <button id="prevBtn" onclick="carousel.scrollBy(-100, 0)">
-                <i class="ri-arrow-left-circle-fill"></i>
-              </button>
-              <button id="nextBtn" onclick="carousel.scrollBy(100, 0)">
-                <i class="ri-arrow-right-circle-fill"></i>
-              </button>
+<section id="gallery">
+  <div class="container">
+    <div id="image-gallery">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/500"><img src="https://unsplash.it/500" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
             </div>
           </div>
-          <button id="closeDialogBtn" class="closeDialog">
-            <i class="ri-close-line"></i>
-          </button>
-        </dialog>
-      </section>
-    </main>
-
-    <footer>
-      <small></small>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/600"><img src="https://unsplash.it/600" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/700"><img src="https://unsplash.it/700" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/800"><img src="https://unsplash.it/800" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/900"><img src="https://unsplash.it/900" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/1000"><img src="https://unsplash.it/1000" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/1100"><img src="https://unsplash.it/1100" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="https://unsplash.it/1200"><img src="https://unsplash.it/1200" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div><!-- End row -->
+    </div><!-- End image gallery -->
+  </div><!-- End container --> 
+</section>
