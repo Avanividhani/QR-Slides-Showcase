@@ -2,7 +2,6 @@
 $('[data-fancybox="gallery"]').fancybox({
   buttons: [
     "slideShow",
-    "zoom",
     "fullScreen",
     "close"
   ],
