@@ -2,88 +2,86 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Responsive Image Gallery with jQuery Lightbox</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - Responsive Gallery Images with Fancybox.js</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Syahrizaldev"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<section id="gallery">
+<main class="main">
   <div class="container">
-    <div id="image-gallery">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/500"><img src="https://unsplash.it/500" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/600"><img src="https://unsplash.it/600" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/700"><img src="https://unsplash.it/700" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/800"><img src="https://unsplash.it/800" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/900"><img src="https://unsplash.it/900" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/1000"><img src="https://unsplash.it/1000" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/1100"><img src="https://unsplash.it/1100" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="https://unsplash.it/1200"><img src="https://unsplash.it/1200" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-      </div><!-- End row -->
-    </div><!-- End image gallery -->
-  </div><!-- End container --> 
-</section>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?nature" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?nature" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?food" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?food" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?travel" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?travel" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?building" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?building" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?flower" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?flower" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?animal" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?animal" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?sport" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?sport" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?human" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?human" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?mountain" data-fancybox="gallery" data-caption="Caption Images 1">
+          <img src="https://source.unsplash.com/1280x720/?mountain" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
+
